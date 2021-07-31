@@ -10,7 +10,6 @@ const appTester = zapier.createAppTester(App);
 //It will run every time the `zapier test` command is executed.
 describe('repo trigger', () => {
   zapier.tools.env.inject();
-  zapier.console.log('Hello world!');
 
   // Make sure there's an open issue to fetch here!
   it('should get a repo', (done) => {
